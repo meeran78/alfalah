@@ -11,7 +11,7 @@ export default function Home() {
     // <div><Video src="./videos/bg2.mp4" loop autoPlay muted/></div>
     <>      
       <div className={styles.sliderContainer}>
-        <Image src={img1} alt="" />
+        <Image src={img1} alt="" /> 
       </div>
     </>
   );
