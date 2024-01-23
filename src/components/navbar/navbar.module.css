@@ -3,9 +3,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(177, 179, 179);
   }
   
-  .logo{
-    font-size: 30px;
-    font-weight: bold;
+  .logo{        
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    right: 10px;
+    margin-left: 20px;
+   
   }
