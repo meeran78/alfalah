@@ -21,13 +21,14 @@
   .menuButton {
     display: block;
     cursor: pointer;
+    margin-right: 20px;
   }
 
   .mobileLinks {  
     position: absolute;
     top: 100px;
     right: 0;
-    width: 50%;
+    width: 40%;
     height: calc(100vh - 100px);
     background-color: var(--bgLight);
     display: flex;
@@ -35,5 +36,6 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-right: 20px;
   }
 }
