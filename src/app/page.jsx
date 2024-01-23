@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Video from "next-video";
-import styles from "./page.module.css";
+import styles from "./home.module.css";
 
 import Carousel from "./carousel";
 

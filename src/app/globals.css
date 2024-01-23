@@ -25,13 +25,14 @@
   
   .container {
     /* background-color: rgb(197, 196, 196); */
-    width: 100%;
+    width: 1536px;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
     /* justify-content: space-between; */
   }
   

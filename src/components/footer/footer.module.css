@@ -1,0 +1,9 @@
+.footerContainer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(177, 179, 179);
+    color: inherit;
+    text-align: center;
+}

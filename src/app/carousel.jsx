@@ -49,6 +49,8 @@ const Carousel = ({ images, interval = 3000 }) => {
         alt={`Slide ${activeIndex}`}
         className="carousel__img"
       />
+      <h1>Title</h1>
+      <h3>Description</h3>
       <button onClick={nextSlide} className="carousel__btn carousel__btn--next">
         &gt;
       </button>
