@@ -9,20 +9,49 @@
     padding: 30px;
     display: flex;
     gap:40px;
-  }
-
-  .pillarsContent {
-    display: flex;
    
   }
 
-  .pillarsContent div{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding:20px;
+  .pillarsNumbers{    
+    color: rgb(163, 39, 39);
+    font-size: large;
+    top: 40px;
+    font-weight: bold;
+  }
+  
+  .pillarsHeader{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    
   }
 
-  .imgContainer{
+  .pillarsContent {
+   
+    gap: 20px;  
+    width: 400px;
+    height: 280px;
+    background-color: rgb(204, 206, 206);
+    border-radius: 20px;
+    padding: 20px;
+    
+  }
 
+  .pillarsSubHeader {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300; 
+  }
+  
+  .pillarsContent span{
+    font-size: large;
+    font-weight: 900;
+    color: rgb(60, 61, 60);
+    padding: 10px;
+  }
+
+  .pillarText {
+    margin-top: 20px;
   }
