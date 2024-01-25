@@ -1,6 +1,6 @@
 const Programs = () => {
   return (
-    <div>Programs</div>
+    <h1>Programs details will coming soon....</h1>
   )
 }
 

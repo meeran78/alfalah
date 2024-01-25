@@ -37,8 +37,8 @@ const links = [
 ];
 
 // TEMPORARY
-const session = true;
-const isAdmin = true;
+const session = false;
+const isAdmin = false;
 
 const Links = ({ session }) => {
   const [open, setOpen] = useState(false);
@@ -57,9 +57,10 @@ const Links = ({ session }) => {
             <button className={styles.logout}>Logout</button>
             {/* </form> */}
           </>
-        ) : (
-          <NavLink item={{ title: "Login", path: "/login" }} />
-        )}
+        ) : ( ""
+          // <NavLink item={{ title: "Login", path: "/login" }} />
+        )
+        }
       </div>
       <Image 
         className={styles.menuButton}

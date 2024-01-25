@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: rgb(177, 179, 179);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
   .logo{        
@@ -14,4 +14,10 @@
     right: 10px;
     margin-left: 20px;
    
+  }
+
+  .headerText {
+    font-size:medium;
+    color: rgb(2, 2, 2);
+    font-weight: 600;
   }

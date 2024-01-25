@@ -32,10 +32,13 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
+    /* max-height: 100vh; */
     /* justify-content: space-between; */
   }
-  
+  .componentContainer{
+    height: 10px;
+    margin-top: 6px;
+  }
   Footer {
     position: absolute;
     
@@ -46,7 +49,7 @@
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    height: 600px;
+    height: 500px;
   }
 
   .carousel__btn {

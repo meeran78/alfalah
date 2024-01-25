@@ -17,7 +17,7 @@ const CarouselIndicators = ({ images, activeIndex, onClick }) => {
   );
 };
 
-const Carousel = ({ images, interval = 3000 }) => {
+const Carousel = ({ images, interval = 6000 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   useEffect(() => {
     const autoPlayInterval = setInterval(nextSlide, interval);

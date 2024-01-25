@@ -12,6 +12,7 @@
     background-color: var(--text);
     color: var(--bg);
     z-index: 99999;
+    margin-right: 10px;
   }
   .submenuContainer {
     position: absolute;

@@ -1,4 +1,28 @@
 .homeContent {
-    height: 500px;
+    margin-top: 6px;
     
+  }
+
+  .pillarsContainer {
+    /* border: 1px solid; */
+    margin-top: 6px;
+    padding: 30px;
+    display: flex;
+    gap:40px;
+  }
+
+  .pillarsContent {
+    display: flex;
+   
+  }
+
+  .pillarsContent div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:20px;
+  }
+
+  .imgContainer{
+
   }
