@@ -11,13 +11,13 @@ const CarouselIndicators = ({ images, activeIndex, onClick }) => {
             index === activeIndex ? "active" : ""
           }`}
           onClick={() => onClick(index)}
-        />
+        ></span>
       ))}
     </div>
   );
 };
 
-const Carousel = ({ images, interval = 6000 }) => {
+const Carousel = ({ images, title, content, interval = 6000 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   useEffect(() => {
     const autoPlayInterval = setInterval(nextSlide, interval);
@@ -49,8 +49,7 @@ const Carousel = ({ images, interval = 6000 }) => {
         alt={`Slide ${activeIndex}`}
         className="carousel__img"
       />
-      <h1>Title</h1>
-      <h3>Description</h3>
+
       <button onClick={nextSlide} className="carousel__btn carousel__btn--next">
         &gt;
       </button>
@@ -59,6 +58,10 @@ const Carousel = ({ images, interval = 6000 }) => {
         activeIndex={activeIndex}
         onClick={goToSlide}
       />
+      <div className="carouselText">
+        <h1>{title}</h1>
+        <h3>{content}</h3>
+      </div>
     </div>
   );
 };

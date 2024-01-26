@@ -13,16 +13,16 @@ const images = [
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFNUgWMUx5IEDEwksQY0ZWc4Ikxit9wt0zB0DfxMMsCYeSdbCOajI3KX5QCutPDaQjEA&usqp=CAU",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg0wFGzQwozdoOxWgvfANGvFiJB57wDzwIZX7d81OE1ybpve3R0M2_nAVkAJFpr3-msj8&usqp=CAU",
 ];
-
+//Create image object with title and content and pass to carousel component
 //Homepage
 export default function Home() {
   return (
     // <div><Video src="./videos/bg2.mp4" loop autoPlay muted/></div>
     <div>
       <div>
-        <Carousel images={images} />
+        <Carousel images={images} title="Title" content="Content" />
       </div>
-      <div className={styles.homeContent}>{/* <MasjidBox /> */}</div>
+      <div className={styles.homeContent}><MasjidBox /></div>
       <div className={styles.pillarsHeader}>5 Pillars of Islam</div>
       <div className={styles.pillarsSubHeader}>
         The Five Pillars (Arkān al-Islām) are the core beliefs and practices of
@@ -37,52 +37,52 @@ export default function Home() {
           <div>
             <span>01 | Shahadah</span>
           </div>
-          <div  className={styles.pillarText}>
+          <p  className={styles.pillarText}>
             Every Muslim is supposed to believe that there is only one God and
             His messenger was Prophet Muhammad.
-          </div>
+          </p>
         </div>
         <div className={styles.pillarsContent}>
           <div>
             <span>02 | Salah</span>
           </div>
           
-          <div className={styles.pillarText}>
+          <p className={styles.pillarText}>
             It is the ritual of praying to Allah five times a day facing Makkah.
             A Muslim must perform the ritual after dark, noon, sunset,
             mid-afternoon and at dawn.
-          </div>
+          </p>
         </div>
         <div className={styles.pillarsContent}>
           <div>
             <span>03 | Sawm</span>
           </div>
           
-          <div  className={styles.pillarText}>
+          <p  className={styles.pillarText}>
             Sawm or fasting helps Muslims to develop a sense of self-discipline
             and allows them to identify with the poor and the needy.
-          </div>
+          </p>
         </div>
         <div className={styles.pillarsContent}>
           <div>
             <span>04 | Zakah</span>
           </div>
          
-          <div  className={styles.pillarText}>
+          <p  className={styles.pillarText}>
             This is an obligatory giving of alms, to the less fortunate in your
             community of believers
-          </div>
+          </p>
         </div>
         <div className={styles.pillarsContent}>
           <div>
             <span>05 | Hajj</span>
           </div>
        
-          <div  className={styles.pillarText}>
+          <p  className={styles.pillarText}>
             It is a pilgrimage to Makkah and is the fifth pillar of Islam. It
             strips away all that relates to societal standards, wealth, and
             pride.
-          </div>
+          </p>
         </div>
       </div>
     </div>

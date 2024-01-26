@@ -9,7 +9,7 @@
     padding: 30px;
     display: flex;
     gap:40px;
-   
+    
   }
 
   .pillarsNumbers{    
@@ -30,12 +30,14 @@
   .pillarsContent {
    
     gap: 20px;  
-    width: 400px;
-    height: 280px;
+    width: 400px;   
+    margin:auto;
+    height: 300px;
+    
+    /* max-height: 300px; */
     background-color: rgb(204, 206, 206);
     border-radius: 20px;
     padding: 20px;
-    
   }
 
   .pillarsSubHeader {
@@ -53,5 +55,55 @@
   }
 
   .pillarText {
-    margin-top: 20px;
+    margin-top: 20px; 
+    min-height: 200px;  
+    /* text-indent: 20px;   */
+    line-height: 1.8;
   }
+
+  @media (max-width: 1536px) {
+    .pillarsContainer {
+      width: 1366px;
+    }
+  }
+  
+  @media (max-width: 1366px) {
+    .pillarsContainer {
+      width: 1280px;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .pillarsContainer {
+      width: 1024px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .pillarsContainer {
+      width: 768px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pillarsContainer {
+      width: 640px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .pillarsContainer {
+      width: 475px;
+    }
+  }
+  @media (max-width: 475px) {
+    .pillarsContainer {
+      width: 380px;
+    }
+    .pillarText {
+      font-size: small;
+    }
+  }
+  

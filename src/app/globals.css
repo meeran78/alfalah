@@ -70,6 +70,11 @@
 
   }
 
+  .carouselText {
+    position:absolute;
+    top:50%;
+    
+  }
   .carousel__btn--prev {
     left: 0;
     border-top-right-radius: 10px;
@@ -91,6 +96,43 @@
   .carousel__img:hover {
     transform: scale(1.05);
   }
+ .carousel__indicators {
+ 
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top:30%;
+ }
+
+ .carousel__indicator {
+  color:white;
+  width: 100px;
+  height: 30px;
+ }
+
+ .carouselDot {
+  width: 2px;
+  height: 2px;
+  background-color: white;
+ }
+
+ .carouselTextContainer {
+  width: 700px;
+  height: 100px;
+  color: rgb(192, 189, 189);  
+  padding: 10px;
+  opacity: 0.7;
+  top:50%;
+ }
+ .carouselText {
+  width: 700px;
+  height: 100px;
+  background-color: #dfdfe0;
+  position: absolute;
+  
+  left: 80px;
+  
+ }
 
   @media (max-width: 1536px) {
     .container {
