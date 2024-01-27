@@ -116,23 +116,49 @@
   background-color: white;
  }
 
- .carouselTextContainer {
+ /* .carouselTextContainer {
   width: 700px;
   height: 100px;
-  color: rgb(192, 189, 189);  
-  padding: 10px;
-  opacity: 0.7;
-  top:50%;
- }
- .carouselText {
+  background-color: #dfdfe0;
+  position: absolute;  
+  left: 80px;
+ } */
+ /* .carouselText {
   width: 700px;
   height: 100px;
   background-color: #dfdfe0;
   position: absolute;
-  
+  opacity: 0.3;
   left: 80px;
-  
- }
+  color:var(--bg);
+ } */
+.carouselTextContainer{
+  margin: 30px;
+  position: absolute;
+  top: 50%;
+  background-color: #d8d8d8;
+  bottom: 1px solid var(--bgLight);
+  width: 600px;
+  height: 100px;
+  opacity: 0.6;
+}
+
+.carouselTextContainer p{
+  margin: 20px;
+  font-weight: bold;
+  color: #000000;
+  font-size:medium; 
+  margin-top: 3px;
+}
+
+.carouselTextContainer div{
+  margin: 20px;
+  font-weight: bold;
+  color: #000000;
+  font-size:medium; 
+  margin-top: 3px;
+}
+
 
   @media (max-width: 1536px) {
     .container {

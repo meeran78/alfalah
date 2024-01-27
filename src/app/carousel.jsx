@@ -58,9 +58,9 @@ const Carousel = ({ images, title, content, interval = 6000 }) => {
         activeIndex={activeIndex}
         onClick={goToSlide}
       />
-      <div className="carouselText">
-        <h1>{title}</h1>
-        <h3>{content}</h3>
+      <div className="carouselTextContainer">
+        <p>{title}</p>
+        <div>{content}</div>
       </div>
     </div>
   );
