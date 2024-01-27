@@ -31,7 +31,7 @@ export default function Home() {
       <div>
         <Carousel images={images} title="Title" content="Content" />
       </div>
-      {/* <div className={styles.homeContent}><MasjidBox /></div> */}
+      <div className={styles.homeContent}><MasjidBox /></div>
       <div className={styles.pillarsHeader}>5 Pillars of Islam</div>
       <div className={styles.pillarsSubHeader}>
         The Five Pillars (Arkān al-Islām) are the core beliefs and practices of
