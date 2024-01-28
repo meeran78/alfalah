@@ -27,3 +27,10 @@
   color: rgb(2, 2, 2);
   font-weight: 600;
 }
+
+@media (max-width: 1024px) {
+  .headerText {
+    font-size: small;
+    font-weight: 400;
+  }
+}

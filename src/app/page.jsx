@@ -8,10 +8,11 @@ import MasjidBox from "@/components/masjidbox/Masjidbox";
 //const MasjidBox = React.lazy(() => import("@/components/masjidbox/Masjidbox"));
 import pillarsImg from "./../../public/5pillars.jpg";
 const images = [
+  "https://picture2photo.files.wordpress.com/2011/09/islamic-wallpaper-wallpapers_14881_1440x900.jpg",
   "https://img.wallmur.net/@wmp/_826ax660/i/s/islamic-wallpaper-kaaba-wall-murals-muslim-wall-print-livingroom_h1zkzgdmagh4zqn4_1.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVdphhih8OtDTeei3UX8WHuSgKLnCs33MYBQ&usqp=CAU",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFNUgWMUx5IEDEwksQY0ZWc4Ikxit9wt0zB0DfxMMsCYeSdbCOajI3KX5QCutPDaQjEA&usqp=CAU",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg0wFGzQwozdoOxWgvfANGvFiJB57wDzwIZX7d81OE1ybpve3R0M2_nAVkAJFpr3-msj8&usqp=CAU",
+  "https://wallpaperswide.com/download/islamic_architecture-wallpaper-1600x900.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYTsZaRBvhgUZFilBfcdFXoX1B2RogVlxXwBJkLv2SArDPbGcYD-GrBTQHI3BbWdE5QM4&usqp=CAU",
+  "https://images.unsplash.com/photo-1578895151671-7d2e2e89dcf7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Nnw4NTc4MTMzfHxlbnwwfHx8fHw%3D",
 ];
 
 const carouselImages = [

@@ -92,6 +92,7 @@
     height: 600px;
     display: block;
     transition: transform 0.3s ease-in-out;
+    object-position: 80% 100%;
   }
   .carousel__img:hover {
     transform: scale(1.05);

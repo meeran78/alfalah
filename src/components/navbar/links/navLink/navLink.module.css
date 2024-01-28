@@ -18,3 +18,12 @@
     position: absolute;
     top: 80px;
   }
+
+  @media (max-width: 1024px) {
+    .container {
+      font-size: smaller;
+      font-weight: 400;
+      padding: 2px;
+      
+    }
+  }
