@@ -1,5 +1,4 @@
-
-import Card from "@/components/Card/card";
+import Card from "@/components/card/Card"
 import styles from "./programs.module.css";
 import { getPrograms } from "@/lib/data";
 
