@@ -1,10 +1,35 @@
 import Image from "next/image";
 import styles from "./about.module.css";
 
+export const metadata = {
+  title: "About",
+  description: "Created by Al Falah IT Team",
+};
+
 const About = () => {
   return (
     <>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.header}>About Us</div>
+      <div className={styles.missionWrapper}>
+        <div>
+          {/* <Image src={} alt="" width={20} height={20}></Image> */}
+          <h3>Our Mission</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aut veritatis nam fugit a maiores vel nihil. 
+            Expedita excepturi nesciunt necessitatibus iure odit dignissimos illo veniam adipisci omnis consequuntur, voluptatem totam?</p>
+        </div>
+        <div><h3>Our Community</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aut veritatis nam fugit a maiores vel nihil. 
+            Expedita excepturi nesciunt necessitatibus iure odit dignissimos illo veniam adipisci omnis consequuntur, voluptatem totam?</p></div>
+        <div><h3>Our Vision</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aut veritatis nam fugit a maiores vel nihil. 
+            Expedita excepturi nesciunt necessitatibus iure odit dignissimos illo veniam adipisci omnis consequuntur, voluptatem totam?</p></div>
+      </div>
+    </div>
+      {/* <div className={styles.container}>
         <div className={styles.textContainer}>
           <h1 className={styles.title}>Who is God?</h1>
           <p className={styles.desc}>
@@ -43,8 +68,8 @@ const About = () => {
             className={styles.img}
           />
         </div>
-      </div>
-      <div className={styles.textContainer}>
+      </div> */}
+      {/* <div className={styles.textContainer}>
         <p className={styles.desc}>
           God is Allah – the name that He has chosen for Himself. It is the name
           He revealed in His final revelation – the name that denotes all that was
@@ -56,7 +81,7 @@ const About = () => {
           Creator of all things, and the One Who controls the possibility of all
           things.
           </p>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -3,7 +3,11 @@ import Links from "./links/Links";
 import Image from "next/image";
 import styles from "./navbar.module.css";
 import logo from "./../../../public/alfalahlogo.png";
-const Navbar = () => {
+import { auth } from "@/lib/auth";
+
+const Navbar = async () => {
+  const session = await auth();
+  console.log(session)
   return (
     <div className={styles.container}>
       <div>
@@ -13,7 +17,7 @@ const Navbar = () => {
         <div className={styles.headerText}>Islamic Center of Henrico - Masjid Al Falah</div>
       </div>
       <div>
-        <Links />
+        <Links session={session}/>
       </div>
     </div>
   );

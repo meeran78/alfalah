@@ -7,6 +7,7 @@ import Carousel from "./carousel";
 import MasjidBox from "@/components/masjidbox/Masjidbox";
 //const MasjidBox = React.lazy(() => import("@/components/masjidbox/Masjidbox"));
 import pillarsImg from "./../../public/5pillars.jpg";
+import LatestNewsFeatures from "@/components/latestNewsFeatures/LatestNewsFeatures";
 const images = [
   "https://picture2photo.files.wordpress.com/2011/09/islamic-wallpaper-wallpapers_14881_1440x900.jpg",
   "https://img.wallmur.net/@wmp/_826ax660/i/s/islamic-wallpaper-kaaba-wall-murals-muslim-wall-print-livingroom_h1zkzgdmagh4zqn4_1.jpg",
@@ -33,6 +34,11 @@ export default function Home() {
         <Carousel images={images} title="Title" content="Content" />
       </div>
       <div className={styles.homeContent}><MasjidBox /></div>
+      <div>
+        <h2>Download Monthly Prayer Calendar</h2>
+        <button>Download</button>
+      </div>
+      <LatestNewsFeatures />
       <div className={styles.pillarsHeader}>5 Pillars of Islam</div>
       <div className={styles.pillarsSubHeader}>
         The Five Pillars (Arkān al-Islām) are the core beliefs and practices of

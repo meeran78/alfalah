@@ -6,4 +6,7 @@
     background-color: rgb(177, 179, 179);
     color: inherit;
     text-align: center;
+    height: 100px;
+    padding-top: 10px;
+    font-size: medium;
 }

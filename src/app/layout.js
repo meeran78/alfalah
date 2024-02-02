@@ -6,7 +6,10 @@ import Footer from "@/components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Al Falah | Islamic Center of Henrico",
+  title: {
+    default: "Al Falah | Islamic Center Of Henrico",
+    template: "%s | Masjid Al Falah",
+  },
   description: "Created by Al Falah IT Team",
 };
 
@@ -20,7 +23,7 @@ export default function RootLayout({ children }) {
         <div className="componentContainer">
           {children}
         </div>        
-        <Footer />
+        {/* <Footer /> */}
         </div>       
       </body>
       
