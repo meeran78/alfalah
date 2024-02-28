@@ -16,9 +16,9 @@ export default function Home() {
 		// <div><Video src="./videos/bg2.mp4" loop autoPlay muted/></div>
 		<div className='container m-auto'>
       
-			{/* <div className=''>
+			<div className=''>
 				<MasjidBox />
-			</div> */}
+			</div>
 			<div>
 				<h2>Download Monthly Prayer Calendar</h2>
 				<button>Download</button>
