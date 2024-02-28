@@ -1,5 +1,4 @@
 import Card from "@/components/card/Card"
-import styles from "./programs.module.css";
 import { getPrograms } from "@/lib/data";
 
 //Fetch data from API
@@ -19,11 +18,11 @@ const Programs = async () => {
 
   //Fetch data from data.js (Local lib file)
   const progs = await getPrograms();
-  
+
   return (
-    <div className={styles.container}>     
+    <div className='container mx-auto relative -z-10 flex flex-wrap gap-20 mt-20'>     
       {progs.map((prog) => (
-        <div className={styles.program} key={prog.id}>
+        <div className=''key={prog.id}>
           <Card  program={prog}/>
         </div>
       ))}     

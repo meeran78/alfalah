@@ -1,6 +1,9 @@
 const Services = () => {
   return (
-    <h1>Services details coming soon....</h1>
+    <div className="container m-auto">
+ <h1>Services details coming soon....</h1>
+    </div>
+   
   )
 }
 

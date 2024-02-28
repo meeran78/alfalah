@@ -1,6 +1,5 @@
 
 import dynamic from "next/dynamic"
-import styles from "./contact.module.css"
 import Image from "next/image"
 
 export const metadata = {
@@ -23,28 +22,23 @@ const Contact = () => {
     // <div>
     //   <h1>Contact Us details coming soon....</h1>
     // </div>
-    <div className={styles.container}>
-    <div className={styles.imgContainer}>
-      <Image src="/nature7.jpg" alt="" width={460} height={500} className={styles.img} />
-    </div>
-    <div className={styles.formContainer}>
-      {/* {isClient && a} */}
-      {/* <HydrationTestNoSSR/> */}
-      {/* <div suppressHydrationWarning>{a}</div> */}
-      <form action="" className={styles.form}>
-        <input type="text" placeholder="Name and Surname" />
-        <input type="text" placeholder="Email Address" />
-        <input type="text" placeholder="Phone Number (Optional)" />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Message"
-        ></textarea>
-        <button>Send</button>
-      </form>
-    </div>
+    <div className='container m-auto relative -z-10 contact' >
+      <div>
+        <span>Active Hours: 9:00 AM - 5:00 PM</span>
+
+        <div className="flex mt-6">
+          <h1>Contact Emails:</h1>
+          <div>
+            <h1>Masjid Adminitration</h1>
+            <span>q1X8B@example.com</span>
+          </div>
+          <div>
+            <h1>Contact Phone</h1>
+            <span>+966 123456789</span>
+          </div>
+        </div>
+
+      </div>
   </div>
   )
 }

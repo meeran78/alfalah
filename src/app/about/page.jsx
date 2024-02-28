@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./about.module.css";
 
 export const metadata = {
   title: "About",
@@ -9,9 +8,9 @@ export const metadata = {
 const About = () => {
   return (
     <>
-    <div className={styles.container}>
-      <div className={styles.header}>About Us</div>
-      <div className={styles.missionWrapper}>
+    <div className='container m-auto'>
+      <div className=''>About Us</div>
+      <div className=''>
         <div>
           {/* <Image src={} alt="" width={20} height={20}></Image> */}
           <h3>Our Mission</h3>
