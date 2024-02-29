@@ -1,51 +1,19 @@
-import React from 'react';
+import { fivePillars } from '@/lib/data';
 
 const FivePillars = () => {
 	return (
-		<div>
-			<div className=''>5 Pillars of Islam</div>
-			<div className=''>
+		<div className='container m-auto'>
+			<div className='text-[15px] font-semibold sm:text-[25px]'>
 				The Five Pillars (Arkān al-Islām) are the core beliefs and practices of
 				Islam which all muslims must adhere to are
 			</div>
-			<div className=''>
-				<div className=''>
-					<span>01 | Shahadah</span>
-					<p className=''>
-						Every Muslim is supposed to believe that there is only one God and
-						His messenger was Prophet Muhammad.
-					</p>
-				</div>
-				<div className=''>
-					<span>02 | Salah</span>
-					<p className=''>
-						It is the ritual of praying to Allah five times a day facing Makkah.
-						A Muslim must perform the ritual after dark, noon, sunset,
-						mid-afternoon and at dawn.
-					</p>
-				</div>
-				<div className=''>
-					<span>03 | Sawm</span>
-					<p className=''>
-						Sawm or fasting helps Muslims to develop a sense of self-discipline
-						and allows them to identify with the poor and the needy.
-					</p>
-				</div>
-				<div className=''>
-					<span>04 | Zakah</span>
-					<p className=''>
-						This is an obligatory giving of alms, to the less fortunate in your
-						community of believers
-					</p>
-				</div>
-				<div className=''>
-					<span>05 | Hajj</span>
-					<p className=''>
-						It is a pilgrimage to Makkah and is the fifth pillar of Islam. It
-						strips away all that relates to societal standards, wealth, and
-						pride.
-					</p>
-				</div>
+			<div className='flex flex-col mt-10 gap-3 sm:flex-row mb-10 '>
+				{fivePillars.map((pillars) => (
+					<div key={pillars.id} className='text-center py-2 shadow-lg w-full'>
+                        <div className='mb-4 tracking-wide ' >0{pillars.id}  <span className='border-l-4 px-2 border-gray-600 uppercase text-2xl' >{pillars.title}</span></div>                        
+                        <div className='tracking-wider leading-6 '>{pillars.desc}</div>
+                    </div>
+				))}
 			</div>
 		</div>
 	);

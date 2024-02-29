@@ -22,7 +22,7 @@ const Contact = () => {
     // <div>
     //   <h1>Contact Us details coming soon....</h1>
     // </div>
-    <div className='container m-auto relative -z-10 contact' >
+    <div className='container m-auto relative -z-10' >
       <div>
         <span>Active Hours: 9:00 AM - 5:00 PM</span>
 

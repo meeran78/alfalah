@@ -1,4 +1,4 @@
-const { default: MasjidBox } = require("@/components/masjidbox/Masjidbox")
+const { default: MasjidBox } = require("@/components/Masjidbox")
 
 const Prayer = () => {
   return (

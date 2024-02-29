@@ -21,40 +21,43 @@ const Navbar = () => {
 
 	return (
 		<>
-			<nav className=' w-full h-24 shadow-xl bg-gray-800/80'>
+			<nav className=' w-full h-20 shadow-xl bg-gray-500'>
 				<div className='flex justify-between items-center h-full w-full px-x xl:px-16'>
 					<Link href='/' alt='logo' className='cursor-pointer'>
 						<Image
 							src={logo}
 							alt='logo'
-							width='105'
-							height='75'
+							width='65'
+							height='65'
 							className='cursor-pointer rounded-full'
 							priority
 						/>
 					</Link>
-					<div className='text-white'>
+					<div className='text-white text-[10px] sm:text-[15px] uppercase font-bold tracking-widest'>
+						Al Falah (Islamic Center of Henrico)
+					</div>
+					<div className='text-white text-[15px]'>
 						<ul className='hidden sm:flex'>
 							<Link href='/'>
-								<li className='ml-10 uppercase hover:border-b  border-Slate-600 text-xl'>Home</li>
+								<li className='ml-10 uppercase hover:border-b  border-Slate-600'>Home</li>
 							</Link>
 							<Link href='/about'>
-								<li className='ml-10 uppercase hover:border-b  border-Slate-600 text-xl'>
+								<li className='ml-10 uppercase hover:border-b  border-Slate-600'>
 									About
 								</li>
 							</Link>
 							<Link href='/programs'>
-								<li className='ml-10 uppercase hover:border-b  border-Slate-600 text-xl'>
+								<li className='ml-10 uppercase hover:border-b  border-Slate-600'>
 									Programs & Events
 								</li>
 							</Link>
 							<Link href='/services'>
-								<li className='ml-10 uppercase hover:border-b border-Slate-600 text-xl'>
+								<li className='ml-10 uppercase hover:border-b border-Slate-600'>
 									Services
 								</li>
 							</Link>
 							<Link href='/contact'>
-								<li className='ml-10 uppercase hover:border-b  border-Slate-600 text-xl'>
+								<li className='ml-10 uppercase hover:border-b  border-Slate-600'>
 									Contact Us
 								</li>
 							</Link>
@@ -112,6 +115,13 @@ const Navbar = () => {
 									className='py-4 cursor-pointer uppercase hover:border-b border-gray-600'
 									onClick={() => setMobileNav(false)}>
 									Contact Us
+								</li>
+							</Link>
+							<Link href='/donate'>
+								<li
+									className='py-4 cursor-pointer uppercase hover:border-b border-gray-600'
+									onClick={() => setMobileNav(false)}>
+									Donate
 								</li>
 							</Link>
 						</ul>

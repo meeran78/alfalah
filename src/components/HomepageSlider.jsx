@@ -9,39 +9,8 @@ import Image from 'next/image';
 //Framer Motion
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variant';
-
-const carouselData = [
-	{
-		id: 1,
-		image: '/nature1.jpg',
-		title: 'Welcoming Ramadhan',
-		content: 'Ramadhan is the most important holiday of Islam.',
-	},
-	{
-		id: 2,
-		image: '/nature2.jpg',
-		title: 'Islamic School',
-		content: 'islamic school program.',
-	},
-	{
-		id: 3,
-		image: '/nature3.jpg',
-		title: 'Welcoming Ramadhan',
-		content: 'Ramadhan is the most important holiday of Islam.',
-	},
-	{
-		id: 4,
-		image: '/nature4.jpg',
-		title: 'Welcoming Ramadhan',
-		content: 'Ramadhan is the most important holiday of Islam.',
-	},
-	{
-		id: 5,
-		image: '/nature5.jpg',
-		title: 'Banquet Hall',
-		content: 'Banquet Hall.',
-	},
-];
+import { carouselData } from '@/lib/data';
+    
 
 const HomepageSlider = () => {
 	return (
@@ -53,7 +22,7 @@ const HomepageSlider = () => {
 				navigation
 				freeMode={true}
 				pagination={{ clickable: true }}
-				scrollbar={{ draggable: false }}
+				scrollbar={{ draggable: true }}
                 autoplay={{
                     delay: 5000,
                     disableOnInteraction: false,

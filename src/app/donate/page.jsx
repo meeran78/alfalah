@@ -1,10 +1,12 @@
 import React from 'react'
-
- const Donate = () => {
+import Donate from '@/components/Donate'
+ const DonatePage = () => {
   return (
-    <div>Donate</div>
+    <div>
+        <Donate />
+    </div>
   )
 
 
   }
-  export default Donate
+  export default DonatePage
