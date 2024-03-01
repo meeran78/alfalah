@@ -33,10 +33,10 @@ const Navbar = () => {
 							priority
 						/>
 					</Link>
-					<div className='text-white text-[13px] sm:text-[24px] uppercase font-bold tracking-widest'>
+					<div className='text-white text-[13px] sm:text-[15px] uppercase font-bold tracking-widest'>
 						Al Falah (Islamic Center of Henrico)
 					</div>
-					<div className='text-white text-[15px] sm:text-[24px]'>
+					<div className='text-white text-[15px] sm:text-[20px]'>
 						<ul className='hidden sm:flex'>
 							<Link href='/'>
 								<li className='ml-10 uppercase hover:border-b  border-Slate-600'>Home</li>

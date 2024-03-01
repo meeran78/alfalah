@@ -47,13 +47,12 @@ const HomepageSlider = () => {
 								<motion.div  variants={fadeIn('down', 0.1)}
                                     initial='hidden'
                                     animate='show'
-                                    exit='hidden' className='text-white absolute top-[200px] left-24 w-[420px] sm:w-full '>
-									<div 
-                                    
-                                    className='block text-3xl py-3'>
+                                    exit='hidden' className='text-white absolute top-[150px] left-24 w-[420px] sm:w-full  '>
+									<div                                    
+                                    className='text-[25px] sm:text-[30px] '>
 										{data.title}
 									</div>
-									<div className='text-2xl'>{data.content}</div>
+									<div className='text-[17px] sm:text-[20px]'>{data.content}</div>
 								</motion.div>
 							</div>
 						</SwiperSlide>
