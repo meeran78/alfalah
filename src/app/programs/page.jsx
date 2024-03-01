@@ -1,5 +1,5 @@
 import Card from '@/components/card/Card';
-import { getPrograms } from '@/lib/data';
+// import { getPrograms } from '@/lib/data';
 
 //Fetch data from API
 // const getData = async () => {
@@ -16,7 +16,7 @@ const Programs = async () => {
 	// console.log(progs)
 
 	//Fetch data from data.js (Local lib file)
-	const progs = await getPrograms();
+	// const progs = await getPrograms();
 
 	return (
 		<div className='container m-auto'>
