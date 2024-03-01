@@ -1,4 +1,5 @@
 'use client';
+import { useRef } from 'react';
 //Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -13,23 +14,29 @@ import { carouselData } from '@/lib/data';
     
 
 const HomepageSlider = () => {
+	const progressCircle = useRef(null);
+	const progressContent = useRef(null);
+	const onAutoplayTimeLeft = (s, time, progress) => {
+	  progressCircle.current.style.setProperty('--progress', 1 - progress);
+	  progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+	};
 	return (
 		<div className='relative -z-10'>
 			<Swiper
 				modules={[Navigation, Pagination, Scrollbar, Autoplay]}
 				spaceBetween={50}
 				slidesPerView={1}
-				navigation
-				freeMode={true}
+				// navigation		
 				pagination={{ clickable: true }}
 				scrollbar={{ draggable: true }}
                 autoplay={{
                     delay: 5000,
                     disableOnInteraction: false,
                   }}
-				className='h-[400px] sm:h-[560px] w-full p-4 '
+				className='h-[400px] sm:h-[560px] w-full p-8'
 				onSwiper={(swiper) => console.log(swiper)}
-				onSlideChange={() => console.log('slide change')}>
+				onSlideChange={() => console.log('slide change')}
+				>
 				{carouselData.map((data, index) => {
 					return (
 						<SwiperSlide key={index}>
@@ -53,6 +60,7 @@ const HomepageSlider = () => {
 					);
 				})}
 			</Swiper>
+			
 		</div>
 	);
 };

@@ -1,88 +1,48 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export const metadata = {
-  title: "About",
-  description: "Created by Al Falah IT Team",
+	title: 'About',
+	description: 'Created by Al Falah IT Team',
 };
 
 const About = () => {
-  return (
-    <>
-    <div className='container m-auto'>
-      <div className=''>About Us</div>
-      <div className=''>
-        <div>
-          {/* <Image src={} alt="" width={20} height={20}></Image> */}
-          <h3>Our Mission</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Aut veritatis nam fugit a maiores vel nihil. 
-            Expedita excepturi nesciunt necessitatibus iure odit dignissimos illo veniam adipisci omnis consequuntur, voluptatem totam?</p>
-        </div>
-        <div><h3>Our Community</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Aut veritatis nam fugit a maiores vel nihil. 
-            Expedita excepturi nesciunt necessitatibus iure odit dignissimos illo veniam adipisci omnis consequuntur, voluptatem totam?</p></div>
-        <div><h3>Our Vision</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Aut veritatis nam fugit a maiores vel nihil. 
-            Expedita excepturi nesciunt necessitatibus iure odit dignissimos illo veniam adipisci omnis consequuntur, voluptatem totam?</p></div>
-      </div>
-    </div>
-      {/* <div className={styles.container}>
-        <div className={styles.textContainer}>
-          <h1 className={styles.title}>Who is God?</h1>
-          <p className={styles.desc}>
-            Who is God? “Say, ‘The truth is that Allah is One. Allah is Besought
-            of all, needing none. He neither begets nor is begotten, Nor is
-            there to Him an equivalent.’” (Qur’an 112:1-4)
-          </p>
-          <p className={styles.desc}>
-            God is the One, the indivisible. He is Eternal and Absolute, He Who
-            created all and was created by none; upon Whom all depend while He
-            depends on none. He is the Self-Sufficient, the Provider. He does
-            not beget, nor was He begotten, nor does He share a partner in His
-            Divine majesty. He Who cannot be known by the eyes, He who is unlike
-            anything, nothing is like him, and He is aware of all things.
-          </p>
-          <p className={styles.desc}>
-            God is the Absolute in knowledge: nothing is hidden from Him, and
-            yet He is hidden from everything. He beholds all and hears all: from
-            the smallest particle in the smallest atom to the supernovas that
-            disrupt the heavens – He is aware of all things and in Absolute
-            control.
-          </p>
-          <p className={styles.desc}>
-            God is the Absolute in power: nothing transpires except that He
-            allows it, and nothing exists except that He creates it. It is He
-            Who creates by the word “Be,” and where there was nothing becomes
-            something. He Who is unlimited by time or space, transcendent beyond
-            limitation – for it is He Who created all limitations.
-          </p>
-        </div>
-        <div className={styles.imgContainer}>
-          <Image
-            src="/allah1.jpeg"
-            alt="About Image"
-            fill
-            className={styles.img}
-          />
-        </div>
-      </div> */}
-      {/* <div className={styles.textContainer}>
-        <p className={styles.desc}>
-          God is Allah – the name that He has chosen for Himself. It is the name
-          He revealed in His final revelation – the name that denotes all that was
-          mentioned above. Allah is the One, the Indivisible. He is the Almighty,
-          the All-Knowing. One who believes this about God has believed in Allah.
-          Praise be to the One, the Absolute; the Transcendent, the Eternal; the
-          First and the Last, the Immense, the Majestic; The Merciful, the
-          Compassionate; the All-Knowing, the Just. Praise be to Allah, the
-          Creator of all things, and the One Who controls the possibility of all
-          things.
-          </p>
-      </div> */}
-    </>
-  );
+	return (
+		<>
+			<div className='container m-auto'>
+				<div className='mt-5 text-2xl font-medium'>About Us</div>
+				<div className='mt-5 flex flex-col sm:flex-row'>
+					<div className='shadow-lg p-5'>
+						{/* <Image src={} alt="" width={20} height={20}></Image> */}
+						<h3 className='text-xl font-medium'>Our Mission</h3>
+						<p className='mt-5'>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+							veritatis nam fugit a maiores vel nihil. Expedita excepturi
+							nesciunt necessitatibus iure odit dignissimos illo veniam adipisci
+							omnis consequuntur, voluptatem totam?
+						</p>
+					</div>
+					<div className='shadow-lg p-5'>
+						<h3 className='text-xl font-medium'>Our Community</h3>
+						<p className='mt-5'>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+							veritatis nam fugit a maiores vel nihil. Expedita excepturi
+							nesciunt necessitatibus iure odit dignissimos illo veniam adipisci
+							omnis consequuntur, voluptatem totam?
+						</p>
+					</div>
+					<div className='shadow-lg p-5'>
+						<h3 className='text-xl font-medium'>Our Vision</h3>
+						<p className='mt-5'>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+							veritatis nam fugit a maiores vel nihil. Expedita excepturi
+							nesciunt necessitatibus iure odit dignissimos illo veniam adipisci
+							omnis consequuntur, voluptatem totam?
+						</p>
+					</div>
+				</div>
+			</div>
+		</>
+	);
 };
 
 export default About;

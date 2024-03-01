@@ -20,15 +20,38 @@ const Programs = async () => {
 
 	return (
 		<div className='container m-auto'>
-			<div className='relative -z-10 flex flex-wrap gap-20 mt-20'>
-				{progs.map((prog) => (
-					<div className='' key={prog.id}>
-						{/* <Card program={prog} /> */}
-            Program & Events
+				<div className='mt-5 text-2xl font-medium'>Program & Events</div>
+				<div className='mt-5 flex flex-col sm:flex-row'>
+					<div className='shadow-lg p-5'>
+						{/* <Image src={} alt="" width={20} height={20}></Image> */}
+						<h3 className='text-xl font-medium'>Sunday School</h3>
+						<p className='mt-5'>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+							veritatis nam fugit a maiores vel nihil. Expedita excepturi
+							nesciunt necessitatibus iure odit dignissimos illo veniam adipisci
+							omnis consequuntur, voluptatem totam?
+						</p>
 					</div>
-				))}
+					<div className='shadow-lg p-5'>
+						<h3 className='text-xl font-medium'>Hifz Program</h3>
+						<p className='mt-5'>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+							veritatis nam fugit a maiores vel nihil. Expedita excepturi
+							nesciunt necessitatibus iure odit dignissimos illo veniam adipisci
+							omnis consequuntur, voluptatem totam?
+						</p>
+					</div>
+					<div className='shadow-lg p-5'>
+						<h3 className='text-xl font-medium'>Sisters Program</h3>
+						<p className='mt-5'>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+							veritatis nam fugit a maiores vel nihil. Expedita excepturi
+							nesciunt necessitatibus iure odit dignissimos illo veniam adipisci
+							omnis consequuntur, voluptatem totam?
+						</p>
+					</div>
+				</div>
 			</div>
-		</div>
 	);
 };
 

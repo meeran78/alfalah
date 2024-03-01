@@ -89,7 +89,7 @@ export const fivePillars = [
 	},
 ];
 
-export const LatestNewsFeaturesData = [
+export const latestNewsData = [
 	{
 		id: 1,
 		title: 'Common Mistakes',
